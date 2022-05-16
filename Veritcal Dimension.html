@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Vertical Dimension</title>
+
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style type="text/css">
+
+        
+        </style>    
+
+    
+    </head>
+
+
+
+
+
+
+
+
+
+    <body>
+        <h1>The Vertical Dimension Formula</h1>
+
+        <p> pu-pu = <input type="number" id="pu-pu"></p>
+        <p> pu(sağ)-ch(sağ) = <input type="number" id= "pu(right)-ch(right)"></p>
+        <p> sl-li = <input type="number" id= "sl-li"></p>
+        <p> sto-po = <input type="number" id= "sto-po"></p>
+        <p> if uç-if uç = <input type="number" id= "if uc-if uc"></p>
+
+        <button id = "button"> Calculate </button>
+
+        <h2 id="result"> The Vertical Dimension is: </h2>
+
+        <h3>Some details about the formula that we found:</h3>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+
+        <h2>SOME PICTURES</h2>
+        <h3>Getting Impression of Upper Jaw</h3>
+        <p><img src="photoo.jpeg" width="300" height="250"></p>
+        <hr>
+        Some Impressions
+        <p><img src="photoo1.jpeg" width="300" height="250" align = "middle"></p>
+        <hr>
+        Some Impressions
+        <p><img src="photoo2.jpeg" width="480" height="275"></p>
+        <hr>
+        Some Impressions
+        <p><img src="photoo3.jpeg"></p>
+        <hr>
+        Some Impressions
+        <p><img src="photoo4.jpeg" width="250" height="250"></p>
+
+
+/*
+var a = document.getElementById("first-parameter").value;
+var b = document.getElementById("second-parameter").value;
+var c = document.getElementById("third-parameter").value;
+var result = parseInt(a) + parseInt(b) + parseInt(c);
+*/
+
+
+        <script type = "text/javascript">
+  
+            document.getElementById("button").onclick = function () {
+                var pp = document.getElementById("pu-pu").value;
+                var pc = document.getElementById("pu(right)-ch(right)").value;
+                var sl = document.getElementById("sl-li").value;
+                var sp = document.getElementById("sto-po").value;
+                var ii = document.getElementById("if uc-if uc").value;
+
+
+                var result = -12.237 + 0.157*Number(pp) + 0.323*Number(pc) + 0.093*Number(sl) + 0.611*Number(sp) + 0.164*Number(ii);   
+                document.getElementById("result").innerHTML = "The Vertical Dimension is: " + Math.round(result * 100) / 100
+
+            }
+
+        </script>
+       
+
+    </body>
+</html>
+
+
+
+
+
+
